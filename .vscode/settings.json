@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "ostream": "c",
+        "sstream": "c",
+        "7.C": "cpp",
+        "algorithm": "c"
+    }
+}
