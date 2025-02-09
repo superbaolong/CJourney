@@ -7,7 +7,7 @@
 int main() {
     int N;
     scanf("%d",&N);      //迷宫是N*N的
-//改点东西看看
+//再改点东西看看
 
     system("pause");
     return 0;
