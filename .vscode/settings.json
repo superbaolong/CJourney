@@ -8,6 +8,8 @@
         "sstream": "c",
         "7.C": "cpp",
         "algorithm": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "5.C": "cpp",
+        "5等会写.C": "cpp"
     }
 }
