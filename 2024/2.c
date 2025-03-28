@@ -27,7 +27,7 @@ int hanglieshi(int a[100][100], int n)
                 }
             }
         }
-        if (i % 2 == 0)
+        if (i % 2 == 0) //加减交替
         {
             result += a[0][i]*hanglieshi(b, n - 1);
         }
@@ -51,6 +51,7 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
+    //以上都是输入
     int result = hanglieshi(a, n);
     printf("%d\n", result);
 
