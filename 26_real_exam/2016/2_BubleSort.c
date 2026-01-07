@@ -36,6 +36,7 @@ int main() {
         while((ch=getchar())!='\n');
 
         sort(data,i);
+        printf("\n");
     }
 
     system("pause");
