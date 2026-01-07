@@ -5,7 +5,31 @@
 #include<math.h>
 
 void sort(int a[],int left,int right){  //快排
-    
+    int temp;
+    int i=left,j=right;
+    if(left>=right)return;  //数组元素要大于等于两个
+
+    int key=a[left];
+    while(i<j){
+        while(i<j && a[j]>=key){
+            j--;;
+        }
+        if(a[j]<key){
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+        while(i<j && a[i]<=key){
+            i++;
+        }
+        if(a[i]>key){
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+    sort(a,0,i-1);
+    sort(a,i+1,right);
 }
 
 int main() {
@@ -21,7 +45,11 @@ int main() {
         }
         while((ch=getchar())!='\n');
 
-        sort(data,0,i);
+        int len=i;
+        sort(data,0,i-1);
+        for(i=0;i<len;i++){
+            printf("%d ",data[i]);
+        }
         printf("\n");
     }
 
